@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/styles-meusite.css">
+      <link href="https://fonts.googleapis.com/css?family=Lobster|Poppins:100,200,300" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      <title>Renata Bontorin - Home </title>
+      <script type="text/javascript">
+         function startPage() {
+            document.querySelector('.overlay').style.backgroundColor = 'rgba(0, 0, 0, 0)';
+            setTimeout(function() {
+               document.querySelector('.overlay').style.display = 'none'
+            }, 1000)
+            document.querySelector('body').style.overflow = 'inherit'
+         }
+      </script>
+   </head>
+
+   <body>
+      
+      <div class="overlay"></div>
+      
+      <img src="img/webbackground.png" style="display:none;" onload="startPage()" />
+      
+      <div class="first">
+         <div class="personal-info">
+            <div class="profile-image">
+               <img src="img/relogo5.png" />
+            </div>    
+            
+         </div>
+         
+         <div class ="nav">
+            <div class="spans">
+               <span class="smooth-link" href="#vem-aqui1">ABOUT</span>&VerticalSeparator; 
+               <span class="smooth-link" href="#vem-aqui2">PROJECTS</span>&VerticalSeparator;
+               <span class="smooth-link" href="#vem-aqui3">CONTACT</span>
+             </div> 
+         </div>
+       </div>
+
+      <div id="vem-aqui1" class="div1 div-style">
+         
+         <p class="p-titles"><i class="fab fa-angellist fa-1x"></i>About Me</p>
+         
+         <div class="column1">
+            
+            <div class="cv-pic">
+               <img src="img/reprofile.png">
+            </div> 
+  
+            <div class="text1 font-style">   
+                  <h1>Name:</h1> <h2>Renata França Bontorin</h2>
+                  <h1>Birth Date:</h1>
+                  <h2>December 28th, 1996</h2>
+                  <h1>Location:</h1>
+                  <h2>Curitiba - Paraná</h2>
+            </div>
+            <div class="text2 font-style">
+                     
+               <h1>Languages:</h1>
+               <h2>Portuguese (Native)</h2>
+               <h2>English (Intermediate)</h2>
+            </div> 
+         </div>
+
+            <hr noshade> 
+
+         <div class="column2">
+         		
+
+
+         </div>   
+
+
+      </div> 
+
+             
+
+      </div>
+
+      <div id="vem-aqui2" class="div2 div-style">
+      	<div class="projects">
+           		<p class="p-titles"><i class="far fa-lightbulb"></i>Projects</p>
+           	</div>
+      </div>
+      <div class="social-media">
+         <a href="https://www.linkedin.com/in/renata-bontorin-aa890515a/" target="_blank"><img src="img/linkedin-icon3.png" alt="Link para o Linkedin"></a>
+         <a href="https://www.facebook.com/rebontorin" target="_blank"><img src="img/facebook-icon3.png" alt="Link para o facebook"></a>
+         <a href="https://www.instagram.com/rebtrn/" target="_blank"><img src="img/instagram-icon3.png" alt="Link para o Instagram"></a>
+      </div>
+   </body>
+
+   <script type="text/javascript">
+      
+      window.onload = function() {
+         let smLink = document.querySelectorAll('.smooth-link');
+         smLink.forEach(function(i) {
+            i.addEventListener('click', function() {
+               let link = i.getAttribute('href');
+               if (link) {
+                  document.querySelector(link).scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start',
+                    inline: 'start'
+                  });
+               }
+            });
+         });
+      }
+
+   </script>
+</html>   
