@@ -1,5 +1,5 @@
-colors: 1960ba blue icon
-        #0E2A47 dark blue
+/*colors: 1960ba blue icon
+        #0E2A47 dark blue*/
 
 html {
    height: 100%;
@@ -72,7 +72,7 @@ i {
 }
 
 .personal-info h1, .personal-info h2 {
-   font-family: 'Lobster', cursive;
+   font-family: 'Lobster' cursive;
    font-weight: normal;
    text-align: center;
 }
@@ -163,7 +163,8 @@ i {
    padding-left: 8em;
 }
 
-.projects p {
+.projects img {
+   margin-left: 5em;
 
 }
 
