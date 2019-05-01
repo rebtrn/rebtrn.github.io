@@ -44,6 +44,7 @@ i {
    color: lightgrey;
    cursor: pointer;  
    font-size: 15px;
+   text-transform: uppercase;
 }
 
 .smooth-link:hover {
@@ -63,7 +64,7 @@ i {
 
 .spans {
    animation-name: animation-1;
-   animation-duration: 3s;
+   animation-duration: .5s;
 }
 
 .personal-info {
@@ -91,8 +92,8 @@ i {
 }
 
 .social-media a:hover {
-   animation-name: animation-1;
-   animation-duration: 2s
+   opacity: .6;
+   transition: opacity .5s;
 }
 
 .social-media a {
@@ -126,11 +127,16 @@ i {
 
 .text1, .text2 {
    padding: 1em 0;
+   min-width: 215px;
 }
 
 .text1 {
-   margin-right: 5em;
-   margin-left: 8em;
+   margin-right: 3em;
+   margin-left: 5em;
+}
+
+.text2 {
+   margin-right: 10em;
 }
 
 .font-style h1, .font-style h2 {
@@ -180,11 +186,11 @@ i {
 
 @keyframes animation-1 {
    0% {
-      opacity: 0; 
+      opacity: 1; 
    }
    
    100% {
-      opacity: 1;
+      opacity: .6;
    }   
 } 
 
